@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CSLModdingFramework.HarmonyPatch/CSLModdingFramework.HarmonyPatch.csproj" />
+  <Project Path="CSLModdingFramework.ToolPanel/CSLModdingFramework.ToolPanel.csproj" />
+  <Project Path="CSLModdingFramework/CSLModdingFramework.csproj" />
+</Solution>

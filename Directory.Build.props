@@ -1,0 +1,13 @@
+﻿<Project>
+    <PropertyGroup>
+        <Version>0.8</Version>
+        <BuildRevision>1</BuildRevision>
+
+        <BuildTicks Condition="'$(Configuration)'=='Debug'">$([System.DateTime]::UtcNow.Ticks)</BuildTicks>
+        <BuildRevision Condition="'$(Configuration)'=='Debug'">$([MSBuild]::Modulo($(BuildTicks),65536))</BuildRevision>
+
+        <AssemblyVersion>$(Version).$(BuildRevision)</AssemblyVersion>
+        <FileVersion>$(Version).$(BuildRevision)</FileVersion>
+        <InformationalVersion>$(Version).$(BuildRevision)</InformationalVersion>
+    </PropertyGroup>
+</Project>

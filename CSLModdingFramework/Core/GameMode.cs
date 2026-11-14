@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace CSLModdingFramework.Core;
+
+[Flags]
+public enum GameMode {
+    None = 0,
+    MainMenu = 1 << 0,
+    Game = 1 << 1,
+    MapEditor = 1 << 2,
+    AssetEditor = 1 << 3,
+    ThemeEditor = 1 << 4,
+    ScenarioEditor = 1 << 5,
+
+    Editor = MapEditor | AssetEditor | ThemeEditor | ScenarioEditor,
+    Any = MainMenu | Game | Editor
+}

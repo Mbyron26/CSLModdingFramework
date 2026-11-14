@@ -1,0 +1,128 @@
+[
+  {
+    "EnglishName": "Arabic",
+    "RawLanguageCode": "ar",
+    "NormalizedLanguageCode": "ar-SA",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Czech",
+    "RawLanguageCode": "cs",
+    "NormalizedLanguageCode": "cs-CZ",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "German",
+    "RawLanguageCode": "de",
+    "NormalizedLanguageCode": "de-DE",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Spanish",
+    "RawLanguageCode": "es-ES",
+    "NormalizedLanguageCode": "es-ES",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "French",
+    "RawLanguageCode": "fr",
+    "NormalizedLanguageCode": "fr-FR",
+    "TotalStrings": 116,
+    "TranslatedStrings": 94
+  },
+  {
+    "EnglishName": "Italian",
+    "RawLanguageCode": "it",
+    "NormalizedLanguageCode": "it-IT",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Japanese",
+    "RawLanguageCode": "ja",
+    "NormalizedLanguageCode": "ja-JP",
+    "TotalStrings": 116,
+    "TranslatedStrings": 106
+  },
+  {
+    "EnglishName": "Korean",
+    "RawLanguageCode": "ko",
+    "NormalizedLanguageCode": "ko-KR",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Dutch",
+    "RawLanguageCode": "nl",
+    "NormalizedLanguageCode": "nl-NL",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Polish",
+    "RawLanguageCode": "pl",
+    "NormalizedLanguageCode": "pl-PL",
+    "TotalStrings": 116,
+    "TranslatedStrings": 106
+  },
+  {
+    "EnglishName": "Portuguese, Brazilian",
+    "RawLanguageCode": "pt-BR",
+    "NormalizedLanguageCode": "pt-BR",
+    "TotalStrings": 116,
+    "TranslatedStrings": 106
+  },
+  {
+    "EnglishName": "Portuguese",
+    "RawLanguageCode": "pt-PT",
+    "NormalizedLanguageCode": "pt-PT",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Russian",
+    "RawLanguageCode": "ru",
+    "NormalizedLanguageCode": "ru-RU",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Slovak",
+    "RawLanguageCode": "sk",
+    "NormalizedLanguageCode": "sk-SK",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Thai",
+    "RawLanguageCode": "th",
+    "NormalizedLanguageCode": "th-TH",
+    "TotalStrings": 116,
+    "TranslatedStrings": 93
+  },
+  {
+    "EnglishName": "Turkish",
+    "RawLanguageCode": "tr",
+    "NormalizedLanguageCode": "tr-TR",
+    "TotalStrings": 116,
+    "TranslatedStrings": 106
+  },
+  {
+    "EnglishName": "Chinese Simplified",
+    "RawLanguageCode": "zh-CN",
+    "NormalizedLanguageCode": "zh-CN",
+    "TotalStrings": 116,
+    "TranslatedStrings": 116
+  },
+  {
+    "EnglishName": "Chinese Traditional",
+    "RawLanguageCode": "zh-TW",
+    "NormalizedLanguageCode": "zh-TW",
+    "TotalStrings": 116,
+    "TranslatedStrings": 95
+  }
+]

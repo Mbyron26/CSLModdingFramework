@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net35</TargetFramework>
+        <LangVersion>11</LangVersion>
+        <Authors>Mbyron26</Authors>
+        <Copyright>Copyright © 2026 Mbyron26</Copyright>
+        <Product>Cities Skylines Modding Framework</Product>
+        <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+        <ManagedPath>$([System.Environment]::GetEnvironmentVariable('CSI_MANAGEDPATH', 'EnvironmentVariableTarget.User'))</ManagedPath>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <ModdingLibrariesDir>$(LOCALAPPDATA)\Colossal Order\Cities_Skylines\Modding\Libraries</ModdingLibrariesDir>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp" HintPath="$(ManagedPath)\Assembly-CSharp.dll" Private="false"/>
+        <Reference Include="ColossalManaged" HintPath="$(ManagedPath)\ColossalManaged.dll" Private="false"/>
+        <Reference Include="ICities" HintPath="$(ManagedPath)\ICities.dll" Private="false"/>
+        <Reference Include="UnityEngine" HintPath="$(ManagedPath)\UnityEngine.dll" Private="false"/>
+        <PackageReference Include="UnifiedUILib" Version="2.2.12"/>
+        <ProjectReference Include="..\CSLModdingFramework\CSLModdingFramework.csproj" />
+    </ItemGroup>
+
+    <Target Name="DeployToModdingLibraries" AfterTargets="Build">
+        <PropertyGroup>
+            <LocalDir>$(ModdingLibrariesDir)</LocalDir>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <FilesToCopy Include="$(OutDir)\**\*.*" Exclude="$(OutDir)\**\*.pdb"/>
+        </ItemGroup>
+
+        <MakeDir Directories="$(LocalDir)"/>
+        <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="@(FilesToCopy->'$(LocalDir)\%(RecursiveDir)%(Filename)%(Extension)')"/>
+        <Message Text="[$([System.DateTime]::Now.ToString(`yyyy-MM-dd HH:mm:ss.fff`))] Deploy to: $(LocalDir)" Importance="high"/>
+    </Target>
+</Project>
